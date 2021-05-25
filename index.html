@@ -561,6 +561,17 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  <script>
+	/* To Disable Inspect Element */
+	$(document).bind("contextmenu",function(e) {
+	 e.preventDefault();
+	});
+	
+	$(document).keydown(function(e){
+		if(e.which === 123){
+		   return false;
+		}
+	});
+	</script>
   </body>
 </html>
